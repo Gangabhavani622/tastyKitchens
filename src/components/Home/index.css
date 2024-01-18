@@ -1,0 +1,157 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  /* align-items: center; */
+}
+
+.carousel-img-box {
+  width: 90%;
+  height: 290px;
+  margin: 20px;
+  align-self: center;
+}
+.carousel-image {
+  width: 100%;
+  height: 250px;
+}
+.carousel-loader-cont{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+}
+
+.popular-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hr-line {
+  border: 1px solid #cbd2d9;
+  width: 100%;
+}
+
+.restaurant-list-cont {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.popular-heading {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+  color: #183b56;
+  line-height: 42px;
+}
+.popular-description-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-direction: row;
+}
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+.filter-icon {
+  width: 24px;
+  height: 24px;
+  color: #475569;
+  margin-right: 4px;
+}
+.popular-description {
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.sort-by-label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+}
+.select-element {
+  color: #475569;
+  min-width: 80px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: DM Sans;
+  border: none;
+  background-color: transparent;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding: 6px;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.btn {
+  border: solid;
+  border-color: #334155;
+  height: 32px;
+  width: 32px;
+}
+
+.count {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #334155;
+}
+
+@media (max-width: 500px) {
+  .carousel-image {
+    width: 100%;
+    border-radius: none;
+    height: 200px;
+  }
+  .carousel-img-box {
+    height: 200px;
+    width: 100%;
+  }
+  .popular-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .popular-description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .hr-line {
+    display: none;
+  }
+  .restaurant-list-cont {
+    flex-direction: column;
+  }
+  .btn {
+    height: 24px;
+    width: 24px;
+  }
+  .count {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .popular-description-cont {
+    flex-direction: column;
+  }
+  .filter-container {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,135 @@
+.restaurant-detail-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.restaurant-view-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food-items-container {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.about-restaurant-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-image: url('https://res.cloudinary.com/doofdbsu7/image/upload/v1693335954/Frame_279_mrywfv.png');
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.banner-restaurant-img {
+  height: 260px;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.about-details-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  margin-left: 20px;
+}
+
+.horizontal-line {
+  border: 1px solid #e2e8f0;
+  height: 40px;
+}
+
+.banner-heading {
+  font-family: 'Roboto';
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.banner-description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.banner-rating-cost-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+}
+
+.banner-icon {
+  height: 12px;
+  width: 12px;
+  color: #ffffff;
+  margin-right: 4px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner-sub-cont {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+
+.banner-title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.banner-para {
+  font-size: 12px;
+  font-weight: 400;
+  color: #e2e8f0;
+  line-height: 16px;
+}
+
+@media (max-width: 500px) {
+  .about-restaurant-cont {
+    padding: 0px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .banner-restaurant-img {
+    position: absolute;
+    top: -2px;
+    left: -68px;
+    border-radius: 138px;
+    height: 160px;
+    width: 160px;
+    align-self: flex-start;
+    margin: 0px;
+  }
+  .banner-heading {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .banner-description {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .food-items-container {
+    flex-direction: column;
+  }
+}
