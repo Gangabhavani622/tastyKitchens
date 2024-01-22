@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import CartContext from './context/CartContext'
 import Home from './components/Home'
 import DetailedRestaurantPage from './components/DetailedRestaurantPage'
@@ -71,7 +71,6 @@ class App extends Component {
           deleteCartItem: this.deleteCartItem,
         }}
       >
-        <BrowserRouter>
           <Switch>
             <Route exact path="/login" component={LoginPage} />
             <ProtectedRoute exact path="/" component={Home} />
@@ -82,7 +81,6 @@ class App extends Component {
               component={DetailedRestaurantPage}
             />
           </Switch>
-        </BrowserRouter>
       </CartContext.Provider>
     )
   }
