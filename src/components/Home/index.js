@@ -126,18 +126,19 @@ class Home extends Component {
     }
 
     return (
-      <div className='carousel-img-box'>
+      <ul className='carousel-img-box'>
         <Slide {...settings}>
           {carouselImages.map(eachImage => (
+            <li key={eachImage.id}>
             <img
               src={eachImage.imageUrl}
-              key={eachImage.id}
               alt={eachImage.id}
               className='carousel-image'
             />
+                </li>
           ))}
         </Slide>
-      </div>
+      </ul>
     )
   }
 
